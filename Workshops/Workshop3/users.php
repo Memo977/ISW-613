@@ -36,11 +36,11 @@ $result = mysqli_query($conn, $sql);
             <tbody>
                 <?php while ($row = mysqli_fetch_assoc($result)): ?>
                 <tr>
-                    <td><?php echo htmlspecialchars($row['id']); ?></td>
-                    <td><?php echo htmlspecialchars($row['name']); ?></td>
-                    <td><?php echo htmlspecialchars($row['lastname']); ?></td>
-                    <td><?php echo htmlspecialchars($row['username']); ?></td>
-                    <td><?php echo htmlspecialchars($row['province']); ?></td>
+                    <td><?php echo $row['id']); ?></td>
+                    <td><?php echo $row['name']); ?></td>
+                    <td><?php echo $row['lastname']); ?></td>
+                    <td><?php echo $row['username']); ?></td>
+                    <td><?php echo $row['province']); ?></td>
                 </tr>
                 <?php endwhile; ?>
             </tbody>
